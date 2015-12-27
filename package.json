@@ -1,7 +1,17 @@
 {
   "name": "react-starter-hmr",
   "browserify": {
-    "transform": [ [ "babelify", { "presets": [ "es2015", "react" ] } ] ]
+    "transform": [
+      [
+        "babelify",
+        {
+          "presets": [
+            "es2015",
+            "react"
+          ]
+        }
+      ]
+    ]
   },
   "scripts": {
     "build": "NODE_ENV=production browserify main.js | uglifyjs -cm > public/bundle.js",
@@ -20,6 +30,7 @@
     "react-dom": "^0.14.3",
     "ud": "^2.0.2",
     "uglify-js": "^2.6.1",
+    "validator": "^4.4.0",
     "watchify": "^3.6.1"
   },
   "license": "public domain"
