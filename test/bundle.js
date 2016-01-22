@@ -1,0 +1,1 @@
+console.error("SyntaxError: /home/raptor/Documents/Learning/Personal/react-form-helper/lib/formBuilder.spec.js: Unexpected token (5:35) while parsing file: /home/raptor/Documents/Learning/Personal/react-form-helper/lib/formBuilder.spec.js");

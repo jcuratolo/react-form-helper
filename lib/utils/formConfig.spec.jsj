@@ -1,0 +1,33 @@
+import expect from 'expect';
+import FormConfig from './formConfig.js';
+
+describe.skip('CreateFormConfig', () => {
+  describe('should validate the parameter', () => {
+    it('ensures the fields property is defined', () => {
+      const withoutFields = {
+        name: 'MyForm',
+        validateForm: () => {}
+      };
+
+      expect(FormConfig).withArgs(withoutFields).toThrow();
+    });
+
+    it('ensures the name property is defined', () => {
+      const withoutName = {
+        validateForm: () => {},
+        fields: []
+      };
+
+      expect(FormConfig).withArgs(withoutName).toThrow();
+    });
+
+    it('ensures the validateForm property is defined', () => {
+      const  withoutValidateForm = {
+        name: 'MyForm',
+        fields: []
+      };
+
+      expect(FormConfig).withArgs(withoutValidateForm).toThrow();
+    });
+  })
+})
